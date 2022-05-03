@@ -43,6 +43,8 @@
 /* Define if you want to enable Wayland support */
 #mesondefine HAVE_WAYLAND
 
+#mesondefine HAVE_XWAYLAND
+
 /* Defined if screen cast and remote desktop support is enabled */
 #mesondefine HAVE_REMOTE_DESKTOP
 
