@@ -19,6 +19,7 @@ mutter_pkg_deps = [
   gsettings_desktop_schemas_dep,
   gtk3_dep,
   pango_dep,
+  xcursor_dep,
 ]
 
 mutter_pkg_private_deps = [
@@ -97,7 +98,6 @@ if have_x11
     xext_dep,
     ice_dep,
     xcomposite_dep,
-    xcursor_dep,
     xdamage_dep,
     xkbfile_dep,
     xkeyboard_config_dep,
