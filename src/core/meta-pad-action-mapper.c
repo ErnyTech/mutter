@@ -485,7 +485,6 @@ meta_pad_action_mapper_emulate_keybinding (MetaPadActionMapper *mapper,
   if (!accel || !*accel)
     return;
 
-  /* FIXME: This is appalling */
   if (!meta_parse_accelerator (accel, &combo)) 
     {
       g_warning ("\"%s\" is not a valid accelerator", accel);
