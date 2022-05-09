@@ -38,6 +38,7 @@
 
 #include "backends/meta-logical-monitor.h"
 #include "clutter/clutter.h"
+#include "core/meta-border.h"
 #include "core/stack.h"
 #include "meta/compositor.h"
 #include "meta/meta-close-dialog.h"
@@ -479,7 +480,7 @@ struct _MetaWindow
   Window user_time_window;
 
   gboolean has_custom_frame_extents;
-  GtkBorder custom_frame_extents;
+  MetaFrameBorder custom_frame_extents;
 
   /* The rectangles here are in "frame rect" coordinates. See the
    * comment at the top of meta_window_move_resize_internal() for more

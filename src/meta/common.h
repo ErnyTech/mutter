@@ -31,6 +31,7 @@
 #include <glib.h>
 
 #include "clutter/clutter.h"
+#include "core/meta-border.h"
 
 /**
  * SECTION:common
@@ -430,12 +431,12 @@ struct _MetaFrameBorders
   /* The frame border is made up of two pieces - an inner visible portion
    * and an outer portion that is invisible but responds to events.
    */
-  GtkBorder visible;
-  GtkBorder invisible;
+  MetaFrameBorder visible;
+  MetaFrameBorder invisible;
 
   /* For convenience, we have a "total" border which is equal to the sum
    * of the two borders above. */
-  GtkBorder total;
+  MetaFrameBorder total;
 };
 
 /* sets all dimensions to zero */

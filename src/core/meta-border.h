@@ -35,6 +35,14 @@ typedef enum
   META_BORDER_MOTION_DIRECTION_NEGATIVE_Y = 1 << 3,
 } MetaBorderMotionDirection;
 
+typedef struct _MetaFrameBorder
+{
+  int16_t left;
+  int16_t right;
+  int16_t top;
+  int16_t bottom;
+} MetaFrameBorder;
+
 typedef struct _MetaVector2
 {
   float x;
