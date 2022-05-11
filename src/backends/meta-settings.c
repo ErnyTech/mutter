@@ -275,7 +275,7 @@ experimental_features_handler (GVariant *features_variant,
   MetaSettings *settings = data;
   GVariantIter features_iter;
   char *feature_str;
-  MetaExperimentalFeature features = META_EXPERIMENTAL_FEATURE_NONE;
+  MetaExperimentalFeature features = META_EXPERIMENTAL_FEATURE_RT_SCHEDULER;
 
   if (settings->experimental_features_overridden)
     {
